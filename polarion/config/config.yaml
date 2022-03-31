@@ -1,0 +1,53 @@
+---
+project_id: CEPH
+file_name: RHCS weekly polarion report
+url: https://polarion.engineering.redhat.com/polarion
+key: tier.KEY
+tags:
+  - tier1
+  - tier2
+  - tier3
+  - tier4
+filter:
+  Automation:
+    keys: caseautomation.KEY
+    labels:
+      - Total Automated
+      - Not Automated
+      - Manual Only
+    values:
+      - automated
+      - notautomated
+      - manualonly
+sender_user: ceph-qe-infra@redhat.com
+recipient_user: ngangadh@redhat.com
+GS_CREDENTIALS: /tmp/service_account.json
+component_filter:
+  Automation:
+    keys: casecomponent.KEY
+    labels:
+      - RADOS
+      - RBD
+      - RGW
+      - Ceph-Ansible
+      - Ceph-Mgr
+      - CephFS
+      - iSCSI
+      - RBD-Mirror
+      - RGW-Multisite
+      - Web-UI
+      - Multi
+      - CephAdm
+    values:
+      - RADOS
+      - RBD
+      - RGW
+      - Ceph-Ansible
+      - Ceph-Mgr
+      - CephFS
+      - iSCSI
+      - RBD-Mirror
+      - RGW-Multisite
+      - Web-UI
+      - Multi
+      - CephAdm
